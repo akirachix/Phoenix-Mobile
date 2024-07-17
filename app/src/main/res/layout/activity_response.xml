@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvQuery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="What is metabolism?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvResponse"
+        android:layout_width="355dp"
+        android:layout_height="264dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="92dp"
+        android:text="Metabolism refers to the whole sum of reactions that occur throughout the body within each cell and that provide the body with energy. This energy gets used for vital processes and the synthesis of new organic material. Every living organism uses its environment to survive by taking nutrients and substances as building blocks for movement, growth, development, and reproduction. All of these are mediated by enzymes, which are proteins with specialized functions in anabolism and catabolism. The rate of energy production is called the basal metabolic rate and is affected by factors such as sex, race, exercise, diet, age, and diseases such as sepsis or cancer.
+
+Go to:
+"
+        app:layout_constraintEnd_toEndOf="@+id/tvQuery"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="@+id/tvQuery"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuery" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="@+id/tvResponse"
+        app:layout_constraintStart_toStartOf="@+id/tvResponse"
+        app:layout_constraintTop_toBottomOf="@+id/tvResponse" />
+</androidx.constraintlayout.widget.ConstraintLayout>
