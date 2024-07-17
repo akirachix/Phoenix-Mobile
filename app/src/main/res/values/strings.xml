@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">rafikiapp</string>
+    <string name="password_is_required">Password is required</string>
+    <string name="email_is_required">email is required</string>
+    <string name="password_and_confirmation_do_not_match">password and confirmation do not match</string>
+    <string name="password_confirmation_is_required">password confirmation is required</string>
+    <string name="password_required">password is required</string>
+    <string name="email_required">email is required</string>
+    <string name="lastname_is_required">lastname is required</string>
+    <string name="firstname_is_required">firstname is required</string>
 </resources>

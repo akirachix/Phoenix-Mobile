@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/etClass"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivitySelection">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilSubject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/tilClass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subject" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilClass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/tilSubject"
+        app:layout_constraintStart_toStartOf="@+id/tilSubject"
+        app:layout_constraintTop_toBottomOf="@+id/tilSubject">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Class" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilTopic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/tilClass"
+        app:layout_constraintStart_toStartOf="@+id/tilClass"
+        app:layout_constraintTop_toBottomOf="@+id/tilClass">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etTopic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Topic" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/blueOne"
+        android:layout_width="142dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="42dp"
+        app:layout_constraintBottom_toTopOf="@+id/blueTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.367"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilTopic"
+        app:srcCompat="@drawable/blue" />
+
+    <ImageView
+        android:id="@+id/blueTwo"
+        android:layout_width="145dp"
+        android:layout_height="187dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="37dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.607"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blueOne"
+        app:srcCompat="@drawable/blue" />
+
+    <TextView
+        android:id="@+id/practicalTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Practicals"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/blueOne"
+        app:layout_constraintEnd_toEndOf="@+id/blueOne"
+        app:layout_constraintStart_toStartOf="@+id/blueOne"
+        app:layout_constraintTop_toTopOf="@+id/blueOne" />
+
+    <TextView
+        android:id="@+id/theoryTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Theory"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/blueTwo"
+        app:layout_constraintEnd_toEndOf="@+id/blueTwo"
+        app:layout_constraintStart_toStartOf="@+id/blueTwo"
+        app:layout_constraintTop_toTopOf="@+id/blueTwo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
