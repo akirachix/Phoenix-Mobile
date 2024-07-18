@@ -9,17 +9,21 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.akirachix.rafikiapp.databinding.ActivityMainBinding
+import com.akirachix.rafikiapp.databinding.ActivityVideoBinding
 
-class MainActivity : AppCompatActivity() {
-    lateinit var binding: ActivityMainBinding
+class ContentVideo : AppCompatActivity() {
+    lateinit var binding: ActivityVideoBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding=ActivityVideoBinding.inflate(layoutInflater)
         setContentView(binding.root)
-//        val intent = Intent(this, conte::class.java)
-//        startActivity(intent)
-        findViewById<Button>(R.id.btnVideos).setOnClickListener {
+
+        binding.ivVideo4.setOnClickListener {
+            val intent= Intent(this,ActivityVideoBinding::class.java)
+            startActivity(intent)
+        }
+
+        findViewById<ImageView>(R.id.ivHome4).setOnClickListener {
             startActivity(Intent(this, ContentVideo::class.java))
         }
 
@@ -30,5 +34,6 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.btnLeaderboard).setOnClickListener {
             startActivity(Intent(this, LeaderboardItemActivity::class.java))
         }
+
     }
 }

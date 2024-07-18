@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SummaryActivity">
+
+    <ImageView
+        android:id="@+id/ivHome4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/ivBoard4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivHome4"
+        app:layout_constraintStart_toEndOf="@+id/ivHome4"
+        app:layout_constraintTop_toTopOf="@+id/ivHome4"
+        app:srcCompat="@drawable/medal" />
+
+    <ImageView
+        android:id="@+id/ivProfile4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBoard4"
+        app:layout_constraintStart_toEndOf="@+id/ivBoard4"
+        app:layout_constraintTop_toTopOf="@+id/ivBoard4"
+        app:srcCompat="@drawable/user" />
+
+    <ImageView
+        android:id="@+id/ivVideo4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivProfile4"
+        app:layout_constraintStart_toEndOf="@+id/ivProfile4"
+        app:layout_constraintTop_toTopOf="@+id/ivProfile4"
+        app:srcCompat="@drawable/video" />
+
+    <ImageView
+        android:id="@+id/ivChatbot4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ivVideo4"
+        app:srcCompat="@drawable/chatbot" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/carbon_cycle" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="356dp"
+        android:layout_height="376dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="The carbon cycle is the biogeochemical cycle that describes the movement of carbon as it is recycled and reused throughout the biosphere, geosphere, hydrosphere, and atmosphere of the Earth. [2][3]  The carbon cycle has both fast (biological) and slow (geological) components. The fast cycle involves the exchange of carbon between the atmosphere, plants, animals, and soil on timescales of years to decades. The slow cycle operates on geological timescales, with carbon being stored in rocks, sediments, and fossil fuels for millions of years before being released back into the atmosphere. [2]  Carbon is essential for life, as it is the building block of key biological molecules like proteins and DNA. Carbon is continuously cycled through various reservoirs, including the atmosphere, oceans, living organisms, and the Earth's crust. [3][5]   Human activities, such as the burning of fossil fuels and deforestation, have significantly disrupted the natural carbon cycle by rapidly releasing large amounts of carbon into the atmosphere. This excess carbon dioxide is a major driver of climate change, causing global warming and ocean acidification. [3][4]  Maintaining a balanced carbon cycle is crucial for the sustainability of Earth's ecosystems and the well-being of all life on the planet. [3]  Citations: [1] https://byjus.com/biology/carbon-cycle/ [2] https://en.wikipedia.org/wiki/Carbon_cycle [3] https://oceanservice.noaa.gov/facts/carbon-cycle.html [4] https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/carbon-cycle [5] https://www.britannica.com/science/carbon-cycle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,6 +13,18 @@
         android:theme="@style/Theme.Rafikiapp"
         tools:targetApi="31">
         <activity
+            android:name=".SummaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LeaderboardItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContentVideo"
+            android:exported="false" />
+        <activity
+            android:name=".content_notes"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
