@@ -6,7 +6,7 @@ xmlns:tools="http://schemas.android.com/tools"
 android:id="@+id/main"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-tools:context=".MainActivity"
+tools:context=".RafikiActivity"
     >
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
@@ -176,3 +176,4 @@ tools:context=".MainActivity"
         app:srcCompat="@drawable/left_arrow_next_svgrepo_com" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -3,4 +3,6 @@
     <string name="first_name_is_required" />
     <string name="last_name_is_required" />
     <string name="codehive_id_is_required" />
+    <string name="answer" />
+    <string name="answer_is_required" />
 </resources>
